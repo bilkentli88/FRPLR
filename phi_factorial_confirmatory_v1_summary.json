@@ -1,0 +1,173 @@
+{
+  "protocol_version": "tacl_phi_factorial_v1",
+  "factorial_config_hash": "af989f16c0b2def5",
+  "qualification_audit_sha256": "4ed49da543fcd9be0884660e851bedf8d8e85c3c46acf25d680cafcc8b1a0357",
+  "runtime_fingerprint": "af01a9b67cd61d817858ca59",
+  "rows": 512,
+  "canonical_metrics": {
+    "canonical_accuracy": 0.984375,
+    "canonical_max_pred_share": 0.265625
+  },
+  "pooled_effects": {
+    "position_effect_canonical_ids": {
+      "mean": -0.0810546875,
+      "ci_lo": -0.5937744140625,
+      "ci_hi": 0.45314941406249964
+    },
+    "position_effect_fragmented_ids": {
+      "mean": 1.322265625,
+      "ci_lo": 0.855419921875,
+      "ci_hi": 1.8477050781249993
+    },
+    "representation_effect_source_geometry": {
+      "mean": -1.9453125,
+      "ci_lo": -2.4013671875,
+      "ci_hi": -1.4697021484375004
+    },
+    "representation_effect_expanded_geometry": {
+      "mean": -0.5419921875,
+      "ci_lo": -0.849609375,
+      "ci_hi": -0.228515625
+    },
+    "position_interaction": {
+      "mean": 1.4033203125,
+      "ci_lo": 0.9658203125,
+      "ci_hi": 1.8369140625
+    },
+    "total_fragmentation_shift": {
+      "mean": -0.623046875,
+      "ci_lo": -1.1650390625,
+      "ci_hi": -0.0537109375
+    }
+  },
+  "cell_effects": {
+    "en_4096": {
+      "position_effect_canonical_ids": {
+        "mean": 2.1875,
+        "ci_lo": 1.0,
+        "ci_hi": 3.480664062499997
+      },
+      "position_effect_fragmented_ids": {
+        "mean": 3.2421875,
+        "ci_lo": 1.9138671875000002,
+        "ci_hi": 4.75
+      },
+      "representation_effect_source_geometry": {
+        "mean": -1.1484375,
+        "ci_lo": -1.703125,
+        "ci_hi": -0.59375
+      },
+      "representation_effect_expanded_geometry": {
+        "mean": -0.09375,
+        "ci_lo": -0.50390625,
+        "ci_hi": 0.3046875
+      },
+      "position_interaction": {
+        "mean": 1.0546875,
+        "ci_lo": 0.3515625,
+        "ci_hi": 1.75390625
+      },
+      "total_fragmentation_shift": {
+        "mean": 2.09375,
+        "ci_lo": 0.9140625,
+        "ci_hi": 3.429882812499997
+      }
+    },
+    "en_8192": {
+      "position_effect_canonical_ids": {
+        "mean": -1.8984375,
+        "ci_lo": -2.4765625,
+        "ci_hi": -1.3203125
+      },
+      "position_effect_fragmented_ids": {
+        "mean": -0.21875,
+        "ci_lo": -0.7578125,
+        "ci_hi": 0.3671875
+      },
+      "representation_effect_source_geometry": {
+        "mean": -1.3125,
+        "ci_lo": -1.84375,
+        "ci_hi": -0.7734375
+      },
+      "representation_effect_expanded_geometry": {
+        "mean": 0.3671875,
+        "ci_lo": -0.015625,
+        "ci_hi": 0.765625
+      },
+      "position_interaction": {
+        "mean": 1.6796875,
+        "ci_lo": 0.9453125,
+        "ci_hi": 2.3828125
+      },
+      "total_fragmentation_shift": {
+        "mean": -1.53125,
+        "ci_lo": -2.0236328125,
+        "ci_hi": -1.046875
+      }
+    },
+    "tr_4096": {
+      "position_effect_canonical_ids": {
+        "mean": 0.34765625,
+        "ci_lo": -0.5390625,
+        "ci_hi": 1.42578125
+      },
+      "position_effect_fragmented_ids": {
+        "mean": 2.2578125,
+        "ci_lo": 1.359375,
+        "ci_hi": 3.2734375
+      },
+      "representation_effect_source_geometry": {
+        "mean": -2.9296875,
+        "ci_lo": -3.65234375,
+        "ci_hi": -2.23046875
+      },
+      "representation_effect_expanded_geometry": {
+        "mean": -1.01953125,
+        "ci_lo": -1.59375,
+        "ci_hi": -0.43359375
+      },
+      "position_interaction": {
+        "mean": 1.91015625,
+        "ci_lo": 1.26171875,
+        "ci_hi": 2.57421875
+      },
+      "total_fragmentation_shift": {
+        "mean": -0.671875,
+        "ci_lo": -1.78515625,
+        "ci_hi": 0.6602539062499986
+      }
+    },
+    "tr_8192": {
+      "position_effect_canonical_ids": {
+        "mean": -0.9609375,
+        "ci_lo": -1.7421875,
+        "ci_hi": -0.203125
+      },
+      "position_effect_fragmented_ids": {
+        "mean": 0.0078125,
+        "ci_lo": -0.8046875,
+        "ci_hi": 0.7421875
+      },
+      "representation_effect_source_geometry": {
+        "mean": -2.390625,
+        "ci_lo": -3.0859375,
+        "ci_hi": -1.6953125
+      },
+      "representation_effect_expanded_geometry": {
+        "mean": -1.421875,
+        "ci_lo": -2.109375,
+        "ci_hi": -0.7421875
+      },
+      "position_interaction": {
+        "mean": 0.96875,
+        "ci_lo": 0.3201171875000002,
+        "ci_hi": 1.6875
+      },
+      "total_fragmentation_shift": {
+        "mean": -2.3828125,
+        "ci_lo": -3.265625,
+        "ci_hi": -1.46875
+      }
+    }
+  }
+}

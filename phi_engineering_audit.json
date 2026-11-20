@@ -1,0 +1,262 @@
+{
+  "protocol_version": "tacl_expansion_v1_1",
+  "config_hash": "ac26f800309cffee",
+  "model": "microsoft/Phi-4-mini-instruct",
+  "transformers": "5.15.1",
+  "torch": "2.11.0+cu128",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "static_gate": {
+    "model_type": "phi3",
+    "max_context": 131072,
+    "required_context": 8192,
+    "context_gate": true,
+    "position_ids_exposed": true,
+    "digit_ids": {
+      "1": 16,
+      "2": 17,
+      "3": 18,
+      "4": 19
+    },
+    "digit_gate": true,
+    "passed": true
+  },
+  "dial_capability": {
+    "tokenizer": "microsoft/Phi-4-mini-instruct",
+    "model_type": "BPE",
+    "vocab_size": 200019,
+    "n_merges": 199742,
+    "merge_rank_available": true,
+    "vocab_restrict_available": true,
+    "dial_type": "merge_rank",
+    "usable_for_arm_a": true
+  },
+  "dial_gate": {
+    "counts": {
+      "100": 192,
+      "50": 211,
+      "25": 230,
+      "10": 268,
+      "5": 310,
+      "2": 338,
+      "1": 369
+    },
+    "oov": {
+      "100": 0,
+      "50": 0,
+      "25": 0,
+      "10": 0,
+      "5": 0,
+      "2": 0,
+      "1": 0
+    },
+    "monotone_nondecreasing": true,
+    "all_in_vocab": true,
+    "phi": {
+      "100": 1.0,
+      "50": 1.0989583333333333,
+      "25": 1.1979166666666667,
+      "10": 1.3958333333333333,
+      "5": 1.6145833333333333,
+      "2": 1.7604166666666667,
+      "1": 1.921875
+    }
+  },
+  "fragmentation_selections": {
+    "en": {
+      "target_ratio": 1.7,
+      "acceptable_range": [
+        1.25,
+        2.1
+      ],
+      "selected": {
+        "keep_pct": 2,
+        "mean_ratio": 1.7052604333462658,
+        "min_ratio": 1.6251830161054173,
+        "max_ratio": 1.7943469785575048,
+        "within_range": true
+      },
+      "passed": true,
+      "candidates": [
+        {
+          "keep_pct": 50,
+          "mean_ratio": 1.0307500713394537,
+          "min_ratio": 1.0292825768667642,
+          "max_ratio": 1.0324074074074074,
+          "within_range": false
+        },
+        {
+          "keep_pct": 25,
+          "mean_ratio": 1.061454406316463,
+          "min_ratio": 1.0583211322596389,
+          "max_ratio": 1.0648148148148149,
+          "within_range": false
+        },
+        {
+          "keep_pct": 10,
+          "mean_ratio": 1.1546389002370658,
+          "min_ratio": 1.1293229420360449,
+          "max_ratio": 1.1874542348059556,
+          "within_range": false
+        },
+        {
+          "keep_pct": 5,
+          "mean_ratio": 1.411317267444983,
+          "min_ratio": 1.343505859375,
+          "max_ratio": 1.5007309941520468,
+          "within_range": true
+        },
+        {
+          "keep_pct": 2,
+          "mean_ratio": 1.7052604333462658,
+          "min_ratio": 1.6251830161054173,
+          "max_ratio": 1.7943469785575048,
+          "within_range": true
+        },
+        {
+          "keep_pct": 1,
+          "mean_ratio": 1.952731032886942,
+          "min_ratio": 1.8372376769155685,
+          "max_ratio": 2.0838206627680314,
+          "within_range": true
+        }
+      ]
+    },
+    "tr": {
+      "target_ratio": 1.7,
+      "acceptable_range": [
+        1.25,
+        2.1
+      ],
+      "selected": {
+        "keep_pct": 2,
+        "mean_ratio": 1.7513450340498329,
+        "min_ratio": 1.6712161832805263,
+        "max_ratio": 1.8018523031927858,
+        "within_range": true
+      },
+      "passed": true,
+      "candidates": [
+        {
+          "keep_pct": 50,
+          "mean_ratio": 1.128756377141953,
+          "min_ratio": 1.0868504513295927,
+          "max_ratio": 1.1632951498903241,
+          "within_range": false
+        },
+        {
+          "keep_pct": 25,
+          "mean_ratio": 1.2538734626949837,
+          "min_ratio": 1.219482421875,
+          "max_ratio": 1.3046018991964938,
+          "within_range": false
+        },
+        {
+          "keep_pct": 10,
+          "mean_ratio": 1.4196988965451287,
+          "min_ratio": 1.3493535008538668,
+          "max_ratio": 1.4725810382646844,
+          "within_range": true
+        },
+        {
+          "keep_pct": 5,
+          "mean_ratio": 1.5889697778766236,
+          "min_ratio": 1.5207115009746588,
+          "max_ratio": 1.6467576791808873,
+          "within_range": true
+        },
+        {
+          "keep_pct": 2,
+          "mean_ratio": 1.7513450340498329,
+          "min_ratio": 1.6712161832805263,
+          "max_ratio": 1.8018523031927858,
+          "within_range": true
+        },
+        {
+          "keep_pct": 1,
+          "mean_ratio": 1.953372702295204,
+          "min_ratio": 1.8413742690058479,
+          "max_ratio": 2.000853242320819,
+          "within_range": true
+        }
+      ]
+    }
+  },
+  "selected_keep_by_language": {
+    "en": 2,
+    "tr": 2
+  },
+  "geometry_audit": [
+    {
+      "language": "en",
+      "target_tokens": 4096,
+      "CC_FC_gap_difference": 0.0,
+      "CE_FE_gap_difference": 0.0,
+      "expanded_minus_source_gap": 3260.0
+    },
+    {
+      "language": "en",
+      "target_tokens": 8192,
+      "CC_FC_gap_difference": 0.0,
+      "CE_FE_gap_difference": 0.0,
+      "expanded_minus_source_gap": 6016.0
+    },
+    {
+      "language": "tr",
+      "target_tokens": 4096,
+      "CC_FC_gap_difference": 0.0,
+      "CE_FE_gap_difference": 0.0,
+      "expanded_minus_source_gap": 3043.0
+    },
+    {
+      "language": "tr",
+      "target_tokens": 8192,
+      "CC_FC_gap_difference": 0.0,
+      "CE_FE_gap_difference": 0.0,
+      "expanded_minus_source_gap": 6443.0
+    }
+  ],
+  "canonical_rows": 32,
+  "canonical_correct": 30,
+  "canonical_accuracy": 0.9375,
+  "canonical_cell_table": [
+    {
+      "filler_language": "en",
+      "target_chat_tokens": 4096,
+      "correct": 7,
+      "n": 8,
+      "accuracy": 0.875
+    },
+    {
+      "filler_language": "en",
+      "target_chat_tokens": 8192,
+      "correct": 8,
+      "n": 8,
+      "accuracy": 1.0
+    },
+    {
+      "filler_language": "tr",
+      "target_chat_tokens": 4096,
+      "correct": 7,
+      "n": 8,
+      "accuracy": 0.875
+    },
+    {
+      "filler_language": "tr",
+      "target_chat_tokens": 8192,
+      "correct": 8,
+      "n": 8,
+      "accuracy": 1.0
+    }
+  ],
+  "maximum_predicted_digit_share": 0.28125,
+  "repeat_max_candidate_logit_diff": 0.0,
+  "canonical_gate_checks": {
+    "row_count": true,
+    "overall_correct": true,
+    "per_cell_correct": true,
+    "response_balance": true,
+    "deterministic_repeat": true
+  },
+  "passed": true,
+  "factorial_outcomes_accessed": false
+}

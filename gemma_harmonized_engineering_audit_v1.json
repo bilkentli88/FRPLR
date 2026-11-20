@@ -1,0 +1,75 @@
+{
+  "protocol_version": "tacl_harmonized_robustness_v1",
+  "config_hash": "97c623257a61e84e",
+  "model": "google/gemma-3-4b-it",
+  "engineering_seed": 8999,
+  "engineering_seed_excluded_from_analysis": true,
+  "runtime": {
+    "model": "google/gemma-3-4b-it",
+    "resolved_model_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+    "resolved_tokenizer_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+    "model_class": "Gemma3ForConditionalGeneration",
+    "weights": "NF4",
+    "compute_dtype": "bfloat16",
+    "attention_implementation": "sdpa",
+    "inference_path": "one_shot_no_cache_explicit_sequential_full_and_sliding_masks",
+    "scorer_version": "gemma3_oneshot_nocache_sequential_masks_v1",
+    "harness_version": "0.5.1",
+    "transformers": "5.15.1",
+    "torch": "2.11.0+cu128",
+    "bitsandbytes": "0.50.2",
+    "cuda": "12.8",
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "cuda_capability": [
+      8,
+      0
+    ]
+  },
+  "runtime_fingerprint": "71edf7da46b60ba31856a405",
+  "encoding_strategy": "canonical_token_offsets_v1",
+  "frag_keep_by_language": {
+    "en": 1,
+    "tr": 5
+  },
+  "digit_ids": {
+    "1": 236770,
+    "2": 236778,
+    "3": 236800,
+    "4": 236812
+  },
+  "static_gate": {
+    "model_type": "gemma3",
+    "max_context": 131072,
+    "required_context": 8192,
+    "context_gate": true,
+    "position_ids_exposed": true,
+    "digit_ids": {
+      "1": 236770,
+      "2": 236778,
+      "3": 236800,
+      "4": 236812
+    },
+    "digit_gate": true,
+    "passed": true
+  },
+  "layer_type_counts": {
+    "sliding_attention": 29,
+    "full_attention": 5
+  },
+  "gates": {
+    "static_model": true,
+    "fragmentation_monotone_and_in_vocab": true,
+    "chat_shell_exact": true,
+    "factorial_geometry_invariants": true,
+    "native_vs_explicit_candidate_argmax_equal": true,
+    "deterministic_repeat": true,
+    "fractional_position_sensitivity": true,
+    "hardest_fe_8k_finite": true,
+    "model_architecture_exact": true
+  },
+  "repeat_max_candidate_logit_difference": 0.0,
+  "fractional_max_candidate_logit_difference": 0.625,
+  "hardest_fe_8k_peak_cuda_gb": 5.2456817626953125,
+  "task_predictions_or_logits_stored": false,
+  "passed": true
+}

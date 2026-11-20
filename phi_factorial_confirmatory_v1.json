@@ -1,0 +1,42 @@
+{
+  "status": "frozen",
+  "protocol_version": "tacl_phi_factorial_v1",
+  "freeze_date_utc": "2026-09-12",
+  "purpose": "confirmatory_phi_factorial",
+  "qualification": {
+    "audit_file": "phi_engineering_audit.json",
+    "audit_sha256": "4ed49da543fcd9be0884660e851bedf8d8e85c3c46acf25d680cafcc8b1a0357",
+    "qualification_config_hash": "ac26f800309cffee",
+    "passed": true,
+    "factorial_outcomes_accessed_at_freeze": false
+  },
+  "phase": "tacl_phi_factorial_4k8k",
+  "model": "microsoft/Phi-4-mini-instruct",
+  "transformers_version": "5.15.1",
+  "weights": "NF4",
+  "compute_dtype": "bfloat16",
+  "attention_implementation": "sdpa",
+  "task_version": "symbolic_assoc_r1_tacl_phi_v1",
+  "scorer_version": "one_shot_no_cache_float_positions_v1",
+  "position_intervention": "canonical_vs_fragmented_x_source_vs_expanded_v1",
+  "condition_order_namespace": "condition_order_tacl_phi_v1",
+  "conditions": ["CC", "CE", "FC", "FE"],
+  "target_lengths": [4096, 8192],
+  "filler_languages": ["en", "tr"],
+  "semantic_seeds": [
+    7000, 7001, 7002, 7003, 7004, 7005, 7006, 7007,
+    7008, 7009, 7010, 7011, 7012, 7013, 7014, 7015,
+    7016, 7017, 7018, 7019, 7020, 7021, 7022, 7023,
+    7024, 7025, 7026, 7027, 7028, 7029, 7030, 7031
+  ],
+  "n_records": 32,
+  "position_rank_set": [0, 2, 5, 7],
+  "frag_keep_by_language": {"en": 2, "tr": 2},
+  "bootstrap": {"reps": 10000, "seed": 20260912, "cluster": "trial_index"},
+  "primary_metric": "gold_vs_best_distractor_logit_margin",
+  "chat_kwargs": {},
+  "expected_rows": 512,
+  "runtime_rule": "all_rows_in_one_jsonl_must_share_identical_runtime_fingerprint",
+  "stopping_rule": "run_all_32_seeds_no_optional_stopping",
+  "analysis_rule": "do_not_compute_factorial_effects_until_all_512_rows_and_pairing_gates_pass"
+}

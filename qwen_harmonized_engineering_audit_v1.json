@@ -1,0 +1,71 @@
+{
+  "protocol_version": "tacl_harmonized_robustness_v1",
+  "config_hash": "feb116643acbc8b0",
+  "model": "Qwen/Qwen3-4B",
+  "engineering_seed": 8999,
+  "engineering_seed_excluded_from_analysis": true,
+  "runtime": {
+    "model": "Qwen/Qwen3-4B",
+    "resolved_model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "resolved_tokenizer_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "model_class": "Qwen3ForCausalLM",
+    "weights": "NF4",
+    "compute_dtype": "bfloat16",
+    "attention_implementation": "sdpa",
+    "inference_path": "one_shot_no_cache_explicit_sequential_mask",
+    "scorer_version": "qwen_oneshot_nocache_sequential_mask_v1",
+    "harness_version": "0.5.0",
+    "transformers": "5.15.1",
+    "torch": "2.11.0+cu128",
+    "bitsandbytes": "0.50.2",
+    "cuda": "12.8",
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "cuda_capability": [
+      8,
+      0
+    ]
+  },
+  "runtime_fingerprint": "3c9eae35c76375f3a63856f5",
+  "encoding_strategy": "pretoken_chunk_v061",
+  "frag_keep_by_language": {
+    "en": 2,
+    "tr": 5
+  },
+  "digit_ids": {
+    "1": 16,
+    "2": 17,
+    "3": 18,
+    "4": 19
+  },
+  "static_gate": {
+    "model_type": "qwen3",
+    "max_context": 40960,
+    "required_context": 8192,
+    "context_gate": true,
+    "position_ids_exposed": true,
+    "digit_ids": {
+      "1": 16,
+      "2": 17,
+      "3": 18,
+      "4": 19
+    },
+    "digit_gate": true,
+    "passed": true
+  },
+  "layer_type_counts": null,
+  "gates": {
+    "static_model": true,
+    "fragmentation_monotone_and_in_vocab": true,
+    "chat_shell_exact": true,
+    "factorial_geometry_invariants": true,
+    "native_vs_explicit_candidate_argmax_equal": true,
+    "deterministic_repeat": true,
+    "fractional_position_sensitivity": true,
+    "hardest_fe_8k_finite": true
+  },
+  "repeat_max_candidate_logit_difference": 0.0,
+  "fractional_max_candidate_logit_difference": 0.875,
+  "hardest_fe_8k_peak_cuda_gb": 3.9179434776306152,
+  "task_predictions_or_logits_stored": false,
+  "passed": true
+}

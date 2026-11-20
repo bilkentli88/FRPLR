@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tacl-factorization"
+version = "0.5.1"
+description = "Frozen, auditable expansion harness for token-identity and positional-geometry experiments"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+gpu = [
+  "torch>=2.4",
+  "transformers==5.15.1",
+  "accelerate>=1.0",
+  "bitsandbytes>=0.45",
+  "tokenizers>=0.21",
+]
+notebook = ["nbformat>=5.10", "jupyter>=1.0"]
+
+[project.scripts]
+tacl-factorization = "tacl_factorization.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
